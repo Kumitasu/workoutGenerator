@@ -1,0 +1,60 @@
+@import "../_mixins";
+.MainHeader {
+
+  padding: 2rem;
+  width: 100vw;
+  height: 4rem;
+  background-color:#ece5e1;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+
+  @include mobile{
+    padding: 1rem;
+
+    .HeaderTitle{
+      font-size:1.5rem;
+    }
+  }
+
+  .HeaderNav {
+    width:30%;
+
+    .HeaderNavBtn {
+
+      display: flex;
+      list-style: none;
+      text-transform: uppercase;
+      justify-content: space-around;
+      a{
+        color:black;
+        text-decoration: none;
+      }
+      .HeaderNavBtn-start{
+        margin-top:14px;
+        @include mobile{
+          margin-top:10px;
+        }
+      }
+      .HeaderNavBtn-special {
+        padding:0.7rem;
+        border-radius:50px;
+        @include mobile{
+          margin-left:10px;
+          padding:0.5rem;
+        }
+      }
+
+    }
+  }
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.MainHeader a:hover,
+.MainHeader a:active,
+.MainHeader a.active {
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid #ff9604;
+}

@@ -1,0 +1,48 @@
+@import "_mixins.scss";
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #120f06;
+  background-image: linear-gradient(135deg, #120f06 85%, #ff9604 100%);
+  background-repeat: no-repeat;
+  height:100vh;
+  text-align: center;
+  color: black;
+  display: flex;
+
+
+
+  main {
+    margin: 30px auto;
+    width:60%;
+    background-color:#ece5e1;
+    border-radius:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      width:90%;
+    }
+
+
+    button{
+      background-color: #ff9604;
+      color: black;
+      margin:1rem 0.5rem;
+      padding:1rem;
+      font-size: 1rem;
+      border-radius: 50px;
+      @include mobile{
+        background-color: #ff9604;
+        color: black;
+        padding:0.75rem;
+        font-size: 1rem;
+        border-radius: 50px;
+      }
+    }
+  }
+}

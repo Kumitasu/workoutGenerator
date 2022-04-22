@@ -1,0 +1,52 @@
+@import "../mixins";
+
+.addWorkout {
+  display: grid;
+  place-items: center;
+
+}
+
+.adwContainer {
+  width:40vw;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include mobile {
+    width:80vw;
+  }
+
+  h1 {
+  text-align: center;
+}
+}
+.adwContainer label {
+  font-size: 25px;
+}
+.adwContainer .inputADW {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputADW input,
+.inputADW textarea {
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  white-space: pre-wrap;
+}
+
+.inputADW input {
+  height: 20px;
+}
+.inputADW textarea {
+  height: 120px;
+}
+input,
+textarea {
+  margin-top: 5px;
+}
+
