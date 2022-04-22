@@ -20,7 +20,6 @@
 
 
 ## Features
-List the ready features here:
 - Login authentication
 - Creating your own workout to "All list"
 - Fetching from firebase
@@ -28,17 +27,15 @@ List the ready features here:
 
 
 
-## Project Status
-Project is: _in progress_ 
+## Project Status 
+_in progress_ 
 
 
 ## Room for Improvement
-
-Room for improvement:
 - Working on app styles
 - Making validations to inputareas
 
-To do:
+## To do:
 - Create onClick effect with generating one random workout
 - "Done workout" that onClick will send workout to new list 
 
