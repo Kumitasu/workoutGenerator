@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 
-function Start() {
-
-
-
-    return (
+const Start = () => (
             <div>
                 <h1>Co chcesz zrobić?</h1>
                 <div className="startContainer">
@@ -28,7 +24,6 @@ function Start() {
                 </div>
             </div>
         );
-}
 
 
 export default Start;

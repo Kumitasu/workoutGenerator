@@ -24,25 +24,25 @@ function WorkoutList() {
 
     return (
         <div>
-                {listOfWorkout.map((workout) => {
+                {listOfWorkout.map(({id, time, exercises, type}) => {
                     return (
-                        <ul key={workout.id} className="listContainer">
+                        <ul key={id} className="listContainer">
                             <ul  className="workoutList">
                                 <ul className="rowContainer">
                                     <h3>Czas</h3>
-                                <li >{workout.time} min</li>
+                                <li >{time} min</li>
                                 </ul>
                                 <ul className="rowContainer">
                                     <h3>Typ</h3>
-                                <li >{workout.type}</li>
+                                <li >{type}</li>
                                 </ul>
                                 <ul className="rowContainer-special">
                                     <h3>WOD</h3>
                                     <ul className="rowContainer-exercises">
-                                        <li >{workout.exercises}</li>
+                                        <li >{exercises}</li>
                                     </ul>
                                 </ul>
-                                <button onClick={() => {deleteWorkout(workout.id)}} className="deleteBtn">Usuń</button>
+                                <button onClick={() => {deleteWorkout(id)}} className="deleteBtn">Usuń</button>
                             </ul>
                         </ul>
                     );
