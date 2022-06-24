@@ -22,7 +22,7 @@ function Workout() {
         <div>
             <h1>Twój trening na dziś</h1>
             <p></p>
-            <button onClick={listOfWorkout} className="generateBtn"> Generuj </button>
+            <button onClick={useEffect} className="generateBtn"> Generuj </button>
             <button className="submitWorkoutBtn"> Trening zakończony </button>
         </div>
     );
